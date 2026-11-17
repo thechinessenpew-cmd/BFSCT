@@ -30,3 +30,11 @@ permission from the copyright holder.
 
 ```bash
 pip install cryptography
+
+usage
+```python
+python bfsct.py info
+python bfsct.py encrypt -p "your-password" -t "secret text" --stdout
+python bfsct.py decrypt -p "your-password" -t "<token>" --stdout
+python bfsct.py encrypt -p "your-password" -i plain.txt -o cipher.txt
+python bfsct.py decrypt -p "your-password" -i cipher.txt -o plain.txt
